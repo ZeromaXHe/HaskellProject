@@ -25,6 +25,8 @@ source-repository head
 
 library
   exposed-modules:
+      IntroductionToHaskellFP_2ndEdition_Chapter01
+      IntroductionToHaskellFP_2ndEdition_Chapter02
       Lib
   other-modules:
       Paths_HaskellProject
