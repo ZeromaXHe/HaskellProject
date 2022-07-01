@@ -1,4 +1,4 @@
-module IntroductionToHaskellFP_2ndEdition_Chapter01 where
+module IntroductionToHaskellFP_2ndEdition_Chapter01 (test1) where
 
 -- 单行注释
 {-
@@ -6,6 +6,9 @@ module IntroductionToHaskellFP_2ndEdition_Chapter01 where
 IDEA 装 intellij-haskell 插件后，只能是方便写代码，本身不带编译功能，还是需要在终端里面使用如下脚本来编译运行（需要管理员权限）
 编译：stack build
 运行：stack exec HaskellProject-exe
+后来发现其实可以支持编译，只是不能直接右键菜单里面启动了。
+需要在右上角 edit/add configuration 下拉框添加一个 Haskell Stack - Haskell Stack Runner。
+然后就可以直接点绿色三角按钮自动编译运行了
 
 其他一些指令：
 启动REPL：stack ghci
@@ -29,3 +32,7 @@ test1_4 :: IO ()
 test1_4 = do
   putStrLn "-----[ test1_4 ]-----"
   putStrLn "Hello, World!"
+
+test1 :: IO()
+test1 = do
+  test1_4

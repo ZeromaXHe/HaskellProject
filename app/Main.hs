@@ -7,6 +7,6 @@ import IntroductionToHaskellFP_2ndEdition_Chapter02
 main :: IO ()
 main = do
   someFunc
-  test1_4
-  test2_1_1
+  test1
+  test2
 
